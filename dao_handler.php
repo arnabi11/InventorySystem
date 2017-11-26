@@ -135,7 +135,7 @@ class mysqlhandler
         $update_string .= " WHERE ";
         $update_string .= $db_attributes["WHERE"]." = ".$db_attributes[$db_attributes["WHERE"]];
         // $update_string = "UPDATE product_info SET standing_quantity='2',selling_price='1600', date_out='2017/11/21' WHERE s_no=5";
-        var_dump($update_string);
+        // var_dump($update_string);
         
         if (!$this->dbc) {
             echo ("Connection failed: " . mysqli_connect_error());
